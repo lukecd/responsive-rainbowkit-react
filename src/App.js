@@ -21,7 +21,7 @@ function App() {
         <Layout>
             <Switch>
                 <Route path="/" exact>
-                    <Home />
+                    <PageOne />
                 </Route>
                 <Route path="/page-one">
                     <PageOne />
