@@ -1,0 +1,17 @@
+@import "./../styles/variables.scss";
+
+.container {
+    height: calc(100vh - #{$headerHeight});
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>* {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+}
+

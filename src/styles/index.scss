@@ -1,0 +1,103 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $Poppins;
+}
+
+#root {
+    height: 100%;
+}
+
+
+.red {
+    background: $red;
+}
+
+.orange {
+    background: $orange;
+}
+
+.yellow {
+    background: $yellow;
+}
+
+.green {
+    background: $green;
+}
+
+.blue {
+    background: $blue;
+}
+
+.purple {
+    background: $purple;
+}
+
+.container {
+    height: calc(100vh - #{$headerHeight});
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>* {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: white;
+    height: 120px;
+}
+
+.footer {
+    background: white;
+}
+
+.main {
+    text-align: left;
+    background: deeppink;
+  
+    font-size: 24px;
+}
+
+.aside1 {
+    background: hotpink;
+}
+
+.aside2 {
+    background: hotpink;
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3;
+    }
+    .aside1 {
+        order: 1;
+    }
+    .aside2 {
+        order: 2;
+    }
+    .main {
+        order: 2;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
